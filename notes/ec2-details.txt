@@ -1,0 +1,13 @@
+Instance Name: ProLEAP EC2
+
+Operating System: Ubuntu 24.04 LTS
+
+Web Server: Nginx
+
+Public IP: 16.171.57.163
+
+Private IP: 172.31.30.183
+
+Region: eu-north-1
+
+Status: Running
