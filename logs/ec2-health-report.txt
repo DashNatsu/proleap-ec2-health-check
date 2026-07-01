@@ -1,0 +1,102 @@
+========================================
+ PROLEAP EC2 HEALTH CHECK REPORT
+========================================
+Report Date : Wed Jul  1 16:00:15 UTC 2026
+Hostname : ip-172-31-30-183
+Current User: ubuntu
+Private IP : 172.31.30.183
+Public IP : 16.171.57.163
+
+========================================
+1. OPERATING SYSTEM INFORMATION
+========================================
+NAME="Ubuntu"
+VERSION="26.04 LTS (Resolute Raccoon)"
+[PASS] Operating system information collected
+
+========================================
+2. SYSTEM UPTIME
+========================================
+ 16:00:15 up 55 min,  1 user,  load average: 0.00, 0.00, 0.00
+[PASS] System uptime command executed successfully
+
+========================================
+3. CPU LOAD
+========================================
+Load Average: 0.00, 0.00, 0.00
+CPU Cores : 2
+1-Minute Load: 0.00
+[PASS] CPU load is below the available CPU core count
+
+========================================
+4. MEMORY USAGE
+========================================
+               total        used        free      shared  buff/cache   available
+Mem:           908Mi       325Mi       264Mi       2.7Mi       433Mi       583Mi
+Swap:             0B          0B          0B
+Memory Usage: 36%
+[PASS] Memory usage is below 80%
+
+========================================
+5. ROOT DISK USAGE
+========================================
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       6.7G  2.6G  4.1G  38% /
+Root Disk Usage: 38%
+[PASS] Root disk usage is below 80%
+
+========================================
+6. TOP 5 MEMORY-CONSUMING PROCESSES
+========================================
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root        1150  0.0  4.8 489608 45476 ?        Ssl  15:10   0:01 /usr/libexec/fwupd/fwupd
+root         611  0.0  4.3 2025016 40452 ?       Ssl  15:05   0:01 /usr/lib/snapd/snapd
+root         735  0.0  3.4 126208 32124 ?        Ssl  15:05   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         599  0.0  3.1  46808 29688 ?        Ss   15:05   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root        1371  0.0  2.2 1832820 20724 ?       Ssl  15:10   0:00 /snap/amazon-ssm-agent/13349/amazon-ssm-agent
+[PASS] Top memory-consuming processes collected
+
+========================================
+7. NGINX SERVICE STATUS
+========================================
+active
+[PASS] Nginx service is running
+
+========================================
+8. PORT 80 STATUS
+========================================
+tcp   LISTEN 0      511               0.0.0.0:80        0.0.0.0:*          
+tcp   LISTEN 0      511                  [::]:80           [::]:*          
+[PASS] Port 80 is listening
+
+========================================
+9. LOCALHOST WEBSITE TEST
+========================================
+[WARNING] Localhost did not return the expected ProLEAP web page
+
+========================================
+10. PUBLIC WEBSITE TEST
+========================================
+[WARNING] Public website is not returning the expected page
+
+========================================
+11. INTERNET CONNECTIVITY TEST
+========================================
+[PASS] Internet connectivity is available
+
+========================================
+12. DNS RESOLUTION TEST
+========================================
+98.87.170.71    amazon.com
+[PASS] DNS resolution is working
+
+========================================
+FINAL HEALTH SUMMARY
+========================================
+Passed Checks : 10
+Warnings : 2
+Overall Status: ATTENTION REQUIRED
+
+========================================
+ HEALTH CHECK COMPLETED
+========================================
