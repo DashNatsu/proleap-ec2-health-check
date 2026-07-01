@@ -1,13 +1,9 @@
-Instance Name: ProLEAP EC2
-
-Operating System: Ubuntu 24.04 LTS
-
+EC2 Instance Name: My_Instance
+AWS Region: eu-north-1
+AMI: Ubuntu Server 24.04 LTS
+Instance Type: t3.micro
+SSH Port: 22
+HTTP Port: 80
 Web Server: Nginx
-
 Public IP: 16.171.57.163
-
 Private IP: 172.31.30.183
-
-Region: eu-north-1
-
-Status: Running

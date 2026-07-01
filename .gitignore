@@ -1,2 +1,6 @@
 *.pem
+*.key
+.env
+aws-credentials
+credentials
 *.log
